@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberTraducteur | Neuralink Pro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CyberTraducteur</h1>
+        <p class="subtitle">Neuralink Pro Multilingual Interface</p>
+    </header>
+
+    <main>
+        <div class="translator-container">
+            <!-- Section Source -->
+            <div class="io-box">
+                <div class="io-header">
+                    <label for="source-lang">SOURCE</label>
+                    <select id="source-lang" class="language-selector">
+                        <option value="fr">Français</option>
+                        <option value="en">English</option>
+                        <option value="creole">Kréol Réyoné</option>
+                    </select>
+                </div>
+                <textarea id="source-text" placeholder="Entrez votre texte ici..."></textarea>
+            </div>
+
+            <!-- Section Actions -->
+            <div class="action-area">
+                <button id="translate-btn" class="translate-btn">Traduire</button>
+                <div>
+                    <button class="copy-btn" data-target="output-1">Copier 1</button>
+                    <button class="copy-btn" data-target="output-2">Copier 2</button>
+                </div>
+            </div>
+
+            <!-- Section Cibles -->
+            <div class="io-box">
+                <div class="io-header">
+                    <label for="target-lang-1">CIBLE 1</label>
+                    <select id="target-lang-1" class="language-selector">
+                        <option value="en">English</option>
+                        <option value="creole">Kréol Réyoné</option>
+                        <option value="fr">Français</option>
+                    </select>
+                </div>
+                <div id="output-1" class="output-area" contenteditable="true"></div>
+            </div>
+        </div>
+        
+        <div class="io-box" style="margin-top: 20px;">
+            <div class="io-header">
+                <label for="target-lang-2">CIBLE 2</label>
+                <select id="target-lang-2" class="language-selector">
+                    <option value="creole">Kréol Réyoné</option>
+                    <option value="fr">Français</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+            <div id="output-2" class="output-area" contenteditable="true"></div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2025 Gleaphe. System Online.</p>
+    </footer>
+
+    <!-- Chargement des scripts dans le bon ordre -->
+    <script src="js/Dictionnaire_Creol_En.js"></script>
+    <script src="js/Dictionnaire_Creol_Fr.js"></script>
+    <script src="js/Dictionnaire_Fr_En.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
