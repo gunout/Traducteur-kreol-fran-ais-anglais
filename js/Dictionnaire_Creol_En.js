@@ -1,6 +1,5 @@
 const CREOLE_ENGLISH_DICTIONARY = {
     'creole-en': {
-        // Greetings and Basic Expressions
         'bonzour': 'hello',
         'sava': 'hi',
         'bonswar': 'good evening',
@@ -48,8 +47,6 @@ const CREOLE_ENGLISH_DICTIONARY = {
         'pas bon zourné': 'have a good day',
         'bon wikenn': 'good weekend',
         'bon vakans': 'happy holidays',
-        
-        // Pronouns
         'mi': 'I',
         'ou': 'you',
         'li': 'he/she/it',
@@ -79,8 +76,6 @@ const CREOLE_ENGLISH_DICTIONARY = {
         'votr': 'your (formal/plural)',
         'vo': 'your (formal/plural, plural)',
         'lor': 'their',
-        
-        // Family
         'famill': 'family',
         'pèr': 'father',
         'mèr': 'mother',
@@ -158,8 +153,6 @@ const CREOLE_ENGLISH_DICTIONARY = {
         'foyé': 'home',
         'domicil': 'residence',
         'lakaz': 'house',
-        
-        // People
         'nonm': 'man',
         'moun': 'person',
         'zanmoun': 'people',
@@ -194,8 +187,6 @@ const CREOLE_ENGLISH_DICTIONARY = {
         'nasyonal': 'national',
         'rézidan': 'resident (male/female)',
         'lokal': 'local (male/female)',
-        
-        // Professions
         'profésyonèl': 'professional (male/female)',
         'ékspar': 'expert (male/female)',
         'spésyalist': 'specialist',
@@ -353,8 +344,6 @@ const CREOLE_ENGLISH_DICTIONARY = {
         'souvétéz': 'rescuer (female)',
         'éro': 'hero (male)',
         'éroyn': 'heroine',
-        
-        // Adjectives
         'kourazé': 'brave (male)',
         'kourazéz': 'brave (female)',
         'brav': 'brave (male/female)',
@@ -416,8 +405,6 @@ const CREOLE_ENGLISH_DICTIONARY = {
         'mor': 'dead (male)',
         'mòr': 'dead (female)',
         'vivan': 'alive (male/female)',
-        
-        // Places
         'vil': 'city',
         'sité': 'city',
         'métropol': 'metropolis',
@@ -938,8 +925,6 @@ const CREOLE_ENGLISH_DICTIONARY = {
         'mindfulness': 'mindfulness',
         'plén konfyans': 'full awareness',
         'kontanplasyon': 'contemplation',
-        
-        // Verbs
         'manz': 'to eat',
         'bwar': 'to drink',
         'dormi': 'to sleep',
@@ -1290,8 +1275,6 @@ const CREOLE_ENGLISH_DICTIONARY = {
         'tomber': 'to fall',
         'pousé': 'to push',
         'krwatr': 'to grow',
-        
-        // Food and Drinks
         'diri': 'rice',
         'may': 'corn',
         'pwa': 'beans',
@@ -1961,8 +1944,6 @@ const CREOLE_ENGLISH_DICTIONARY = {
         'tyren': 'train',
         'tram': 'tramway',
         'métro': 'subway',
-
-        // Time and Weather
         'lindi': 'Monday',
         'mardi': 'Tuesday',
         'merkredi': 'Wednesday',
@@ -2417,4 +2398,4 @@ const CREOLE_ENGLISH_DICTIONARY = {
         'de temps à autre': 'from time to time',
         'parfois': 'sometimes',
 	}
-},
+}

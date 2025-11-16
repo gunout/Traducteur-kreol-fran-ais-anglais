@@ -1,6 +1,5 @@
 const CREOLE_FRENCH_DICTIONARY = {
     'creole-fr': {
-        // Greetings and Basic Expressions
         'bonzour': 'bonjour',
         'sava': 'salut',
         'bonswar': 'bonsoir',
@@ -48,8 +47,6 @@ const CREOLE_FRENCH_DICTIONARY = {
         'pas bon zourné': 'passez une bonne journée',
         'bon wikenn': 'bon week-end',
         'bon vakans': 'bonnes vacances',
-        
-        // Pronouns
         'mi': 'je',
         'ou': 'tu',
         'li': 'il/elle',
@@ -79,8 +76,6 @@ const CREOLE_FRENCH_DICTIONARY = {
         'votr': 'votre',
         'vo': 'vos',
         'lor': 'leur',
-        
-        // Family
         'famill': 'famille',
         'pèr': 'père',
         'mèr': 'mère',
@@ -158,8 +153,6 @@ const CREOLE_FRENCH_DICTIONARY = {
         'foyé': 'foyer',
         'domicil': 'résidence',
         'lakaz': 'maison',
-        
-        // People
         'nonm': 'homme',
         'moun': 'personne',
         'zanmoun': 'gens',
@@ -194,8 +187,6 @@ const CREOLE_FRENCH_DICTIONARY = {
         'nasyonal': 'national',
         'rézidan': 'résident',
         'lokal': 'local(e)',
-        
-        // Professions
         'profésyonèl': 'professionnel(le)',
         'ékspar': 'expert(e)',
         'spésyalist': 'spécialiste',
@@ -353,8 +344,6 @@ const CREOLE_FRENCH_DICTIONARY = {
         'souvétéz': 'sauveteuse',
         'éro': 'héros',
         'éroyn': 'héroïne',
-        
-        // Adjectives
         'kourazé': 'courageux',
         'kourazéz': 'courageuse',
         'brav': 'brave',
@@ -416,8 +405,6 @@ const CREOLE_FRENCH_DICTIONARY = {
         'mor': 'mort',
         'mòr': 'morte',
         'vivan': 'vivant(e)',
-        
-        // Places
         'vil': 'ville',
         'sité': 'cité',
         'métropol': 'métropole',
@@ -938,8 +925,6 @@ const CREOLE_FRENCH_DICTIONARY = {
         'mindfulness': 'pleine conscience',
         'plén konfyans': 'pleine conscience',
         'kontanplasyon': 'contemplation',
-        
-        // Verbs
         'manz': 'manger',
         'bwar': 'boire',
         'dormi': 'dormir',
@@ -1290,8 +1275,6 @@ const CREOLE_FRENCH_DICTIONARY = {
         'tomber': 'tomber',
         'pousé': 'pousser',
         'krwatr': 'croître',
-        
-        // Food and Drinks
         'diri': 'riz',
         'may': 'maïs',
         'pwa': 'haricots',
@@ -1961,8 +1944,6 @@ const CREOLE_FRENCH_DICTIONARY = {
         'tyren': 'train',
         'tram': 'tramway',
         'métro': 'métro',
-
-        // Time and Weather
         'lindi': 'lundi',
         'mardi': 'mardi',
         'merkredi': 'mercredi',
@@ -2413,4 +2394,4 @@ const CREOLE_FRENCH_DICTIONARY = {
         'de temps à autre': 'de temps à autre',
         'parfois': 'parfois',
     }
-},
+}

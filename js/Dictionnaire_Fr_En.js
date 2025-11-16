@@ -1,6 +1,5 @@
 const FRENCH_ENGLISH_DICTIONARY = {
     'fr-en': {
-        // Greetings and Basic Expressions
         'bonjour': 'hello',
         'salut': 'hi',
         'bonsoir': 'good evening',
@@ -48,8 +47,6 @@ const FRENCH_ENGLISH_DICTIONARY = {
         'passez une bonne journée': 'have a good day',
         'bon week-end': 'good weekend',
         'bonnes vacances': 'happy holidays',
-        
-        // Pronouns
         'je': 'I',
         'tu': 'you',
         'il/elle': 'he/she',
@@ -79,8 +76,6 @@ const FRENCH_ENGLISH_DICTIONARY = {
         'votre': 'your (formal/plural)',
         'vos': 'your (formal/plural, plural)',
         'leur': 'their',
-        
-        // Family
         'famille': 'family',
         'père': 'father',
         'mère': 'mother',
@@ -158,8 +153,6 @@ const FRENCH_ENGLISH_DICTIONARY = {
         'foyer': 'home',
         'résidence': 'residence',
         'maison': 'house',
-        
-        // People
         'homme': 'man',
         'personne': 'person',
         'gens': 'people',
@@ -194,8 +187,6 @@ const FRENCH_ENGLISH_DICTIONARY = {
         'national': 'national',
         'résident': 'resident (male/female)',
         'local(e)': 'local (male/female)',
-        
-        // Professions
         'professionnel(le)': 'professional (male/female)',
         'expert(e)': 'expert (male/female)',
         'spécialiste': 'specialist',
@@ -353,8 +344,6 @@ const FRENCH_ENGLISH_DICTIONARY = {
         'sauveteuse': 'rescuer (female)',
         'héros': 'hero (male)',
         'héroïne': 'heroine',
-        
-        // Adjectives
         'courageux': 'brave (male)',
         'courageuse': 'brave (female)',
         'brave': 'brave (male/female)',
@@ -416,8 +405,6 @@ const FRENCH_ENGLISH_DICTIONARY = {
         'mort': 'dead (male)',
         'morte': 'dead (female)',
         'vivant(e)': 'alive (male/female)',
-        
-        // Places
         'ville': 'city',
         'cité': 'city',
         'métropole': 'metropolis',
@@ -935,8 +922,6 @@ const FRENCH_ENGLISH_DICTIONARY = {
         'présence': 'presence',
         'pleine conscience': 'mindfulness',
         'contemplation': 'contemplation',
-        
-        // Verbs
         'manger': 'to eat',
         'boire': 'to drink',
         'dormir': 'to sleep',
@@ -1286,8 +1271,6 @@ const FRENCH_ENGLISH_DICTIONARY = {
         'tomber': 'to fall',
         'pousser': 'to push',
         'croître': 'to grow',
-        
-        // Food and Drinks
         'riz': 'rice',
         'maïs': 'corn',
         'haricots': 'beans',
@@ -1904,8 +1887,6 @@ const FRENCH_ENGLISH_DICTIONARY = {
         'train': 'train',
         'tramway': 'tramway',
         'métro': 'subway',
-
-        // Time and Weather
         'lundi': 'Monday',
         'mardi': 'Tuesday',
         'mercredi': 'Wednesday',
@@ -2274,4 +2255,4 @@ const FRENCH_ENGLISH_DICTIONARY = {
         'spécifiquement': 'specifically',
         'de temps à autre': 'from time to time',
     }
-},
+}
