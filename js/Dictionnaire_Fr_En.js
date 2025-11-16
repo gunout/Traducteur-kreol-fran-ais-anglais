@@ -2255,4 +2255,4 @@ const FRENCH_ENGLISH_DICTIONARY = {
         'spécifiquement': 'specifically',
         'de temps à autre': 'from time to time',
     }
-}
+};
