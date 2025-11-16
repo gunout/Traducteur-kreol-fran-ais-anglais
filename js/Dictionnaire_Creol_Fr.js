@@ -2413,4 +2413,4 @@ const CREOLE_FRENCH_DICTIONARY = {
         'de temps à autre': 'de temps à autre',
         'parfois': 'parfois',
     }
-}
+},
