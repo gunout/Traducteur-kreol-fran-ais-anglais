@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberTraducteur | Neuralink Pro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* --- PALETTE DE COULEURS CYBERPUNK RÉUNION --- */
+        :root {
+            --bg-dark: #0a0a1a; /* Fond sombre, presque noir */
+            --reunion-blue: #0055A4;
+            --reunion-cyan: #00aaff; /* Version néon du bleu */
+            --reunion-yellow: #FDB913;
+            --reunion-red: #EF4135;
+            --reunion-magenta: #ff00ff; /* Touche cyberpunk supplémentaire */
+            --text-light: #e0e0e0;
+            --panel-bg: rgba(10, 10, 26, 0.8);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-color: var(--bg-dark);
+            background-image: 
+                radial-gradient(circle at 20% 50%, rgba(0, 85, 164, 0.2) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(253, 185, 19, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 20%, rgba(239, 65, 53, 0.15) 0%, transparent 50%);
+            font-family: 'Orbitron', sans-serif;
+            color: var(--text-light);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header, main, footer {
+            width: 90%;
+            max-width: 1200px;
+            background-color: var(--panel-bg);
+            border: 1px solid var(--reunion-cyan);
+            border-radius: 10px;
+            box-shadow: 
+                0 0 15px rgba(0, 170, 255, 0.5),
+                inset 0 0 15px rgba(0, 170, 255, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        h1 {
+            font-weight: 900;
+            font-size: 2.5rem;
+            color: var(--reunion-yellow);
+            text-shadow: 
+                0 0 10px var(--reunion-yellow),
+                0 0 20px var(--reunion-yellow),
+                0 0 30px var(--reunion-yellow);
+            margin: 0;
+        }
+
+        .subtitle {
+            color: var(--reunion-cyan);
+            margin-top: 5px;
+            font-size: 0.9rem;
+            text-shadow: 0 0 5px var(--reunion-cyan);
+        }
+
+        .translator-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .io-box {
+            flex: 1;
+            min-width: 280px;
+            background: rgba(0, 20, 40, 0.5);
+            border: 1px solid rgba(0, 170, 255, 0.3);
+            border-radius: 5px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .io-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid var(--reunion-red);
+        }
+
+        label {
+            color: var(--reunion-yellow);
+            font-weight: 700;
+            text-shadow: 0 0 5px var(--reunion-yellow);
+        }
+
+        .language-selector, textarea, .output-area {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--reunion-cyan);
+            color: var(--text-light);
+            border-radius: 5px;
+            padding: 10px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1rem;
+        }
+
+        .language-selector:focus, textarea:focus, .output-area:focus {
+            outline: none;
+            box-shadow: 0 0 10px var(--reunion-cyan);
+            border-color: var(--reunion-yellow);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .output-area {
+            min-height: 150px;
+            overflow-y: auto;
+        }
+
+        .action-area {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .translate-btn {
+            background-color: transparent;
+            color: var(--reunion-yellow);
+            border: 2px solid var(--reunion-yellow);
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px var(--reunion-yellow), inset 0 0 10px var(--reunion-yellow);
+            animation: pulse-yellow 2s infinite;
+        }
+
+        .translate-btn:hover {
+            background-color: var(--reunion-yellow);
+            color: var(--bg-dark);
+            box-shadow: 0 0 20px var(--reunion-yellow), 0 0 30px var(--reunion-yellow);
+        }
+
+        .copy-btn {
+            background-color: transparent;
+            color: var(--reunion-red);
+            border: 1px solid var(--reunion-red);
+            padding: 8px 15px;
+            font-size: 0.9rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 0 5px;
+        }
+
+        .copy-btn:hover {
+            background-color: var(--reunion-red);
+            color: var(--text-light);
+            box-shadow: 0 0 10px var(--reunion-red);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.8rem;
+            color: rgba(224, 224, 224, 0.7);
+        }
+
+        @keyframes pulse-yellow {
+            0% { box-shadow: 0 0 10px var(--reunion-yellow), inset 0 0 10px var(--reunion-yellow); }
+            50% { box-shadow: 0 0 20px var(--reunion-yellow), inset 0 0 15px var(--reunion-yellow); }
+            100% { box-shadow: 0 0 10px var(--reunion-yellow), inset 0 0 10px var(--reunion-yellow); }
+        }
+
+        @media (max-width: 768px) {
+            .translator-container {
+                flex-direction: column;
+            }
+            .action-area {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CyberTraducteur</h1>
+        <p class="subtitle">Neuralink Pro Multilingual Interface</p>
+    </header>
+
+    <main>
+        <div class="translator-container">
+            <!-- Section Source -->
+            <div class="io-box">
+                <div class="io-header">
+                    <label for="source-lang">SOURCE</label>
+                    <select id="source-lang" class="language-selector">
+                        <option value="fr">Français</option>
+                        <option value="en">English</option>
+                        <option value="creole">Kréol Réyoné</option>
+                    </select>
+                </div>
+                <textarea id="source-text" placeholder="Entrez votre texte ici..."></textarea>
+            </div>
+
+            <!-- Section Actions -->
+            <div class="action-area">
+                <button id="translate-btn" class="translate-btn">Traduire</button>
+                <div>
+                    <button class="copy-btn" data-target="output-1">Copier 1</button>
+                    <button class="copy-btn" data-target="output-2">Copier 2</button>
+                </div>
+            </div>
+
+            <!-- Section Cibles -->
+            <div class="io-box">
+                <div class="io-header">
+                    <label for="target-lang-1">CIBLE 1</label>
+                    <select id="target-lang-1" class="language-selector">
+                        <option value="en">English</option>
+                        <option value="creole">Kréol Réyoné</option>
+                        <option value="fr">Français</option>
+                    </select>
+                </div>
+                <div id="output-1" class="output-area" contenteditable="true"></div>
+            </div>
+        </div>
+        
+        <div class="io-box" style="margin-top: 20px;">
+            <div class="io-header">
+                <label for="target-lang-2">CIBLE 2</label>
+                <select id="target-lang-2" class="language-selector">
+                    <option value="creole">Kréol Réyoné</option>
+                    <option value="fr">Français</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+            <div id="output-2" class="output-area" contenteditable="true"></div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2025 Gleaphe. System Online.</p>
+    </footer>
+
+    <!-- Chargement des scripts dans le bon ordre -->
+    <script src="js/Dictionnaire_Creol_En.js"></script>
+    <script src="js/Dictionnaire_Creol_Fr.js"></script>
+    <script src="js/Dictionnaire_Fr_En.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
