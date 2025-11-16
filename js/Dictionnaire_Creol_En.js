@@ -2398,4 +2398,4 @@ const CREOLE_ENGLISH_DICTIONARY = {
         'de temps à autre': 'from time to time',
         'parfois': 'sometimes',
 	}
-}
+};
